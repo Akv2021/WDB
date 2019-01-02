@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <h1>Registration</h1>
+
+  <form action="" method="get">
+    <label>First Name:
+      <input type="text" name="firstname" required>
+    </label>
+    <label>Last Name:
+      <input type="text" name="lastname" required>
+    </label><br>
+
+    <label for="gender">Male </label>
+    <input type="radio" name="Gender" value="Male" id="gender">
+    <label for="gender">Female </label>
+    <input type="radio" name="Gender" value="Female" id="gender">
+    <label for="gender">Other </label>
+    <input type="radio" name="Gender" value="Other" id="gender"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+    <label for="Password">Password:</label>
+    <input type="password" name="password" minlength="5" maxlength="10" id="Password" required><br>
+
+    <label>Birthday:
+
+        <select name="Month">
+          <option selected>Month</option>
+          <option >Jan</option>
+          <option >Feb</option>
+          <option >Mar</option>
+        </select>
+
+        <select name="Day">
+          <option  selected>Day</option>
+          <option >1</option>
+          <option >2</option>
+          <option>3</option>
+        </select>
+
+
+        <select name="Year">
+          <option selected>Year</option>
+          <option>1996</option>
+          <option>1997</option>
+          <option>1998</option>
+        </select>
+    
+    </label>
+
+    <p>I agree <input type="checkbox" name="agree"></p>
+
+    <button type="submit" value="Submit">Go!</button>
+
+
+
+  </form>
+</body>
+
+</html>
