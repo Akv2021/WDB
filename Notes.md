@@ -35,7 +35,45 @@ Forms
 
 iFrame
 
-1. 
+1. iFrame is used to add web pages (external documents) in our page.
+2. iFrame has attributes similar to img. Eg. src,width,height (frameborder,allowfullscreen).
+3. To open link in iFrame, we use name attribute and use same name in "target" attribute of anchor tag.
+4. Tip: To deal with browsers that do not support <iframe>, add a text between the opening <iframe> tag and the closing </iframe> tag.
+5. Use CSS to style the <iframe> (even to include scrollbars).
 
+* Block elements have <br> before and after it by default.
+* Description list : dt for terms, dd for definition.
+* When a word is too long, or you are afraid that the browser will break your lines at the wrong place, you can use the <wbr> element to add word break opportunities.
+* The <track> tag specifies text tracks for media elements (<audio> and <video>).
+* The <base> tag specifies the base URL/target for all relative URLs in a document. (base must be inside head tag.) The <base> tag must have either an href attribute or a target attribute, or both.
+
+
+
+Table
+
+1. tr = table row, th = heading (only 1st row), td = data. 
+	We can use <th> in subsequent rows as well for all the bold cells.	
+2. rowspan ,colspan . Rowspan = "2", then do not provide <td> for that cell in next row. 
+	The cell for which rowspan/colspan has been provided is already defined, so skip that one. 
+	[But, for example, what if you added an extra cell? Well, it would just pop off the edge to the right.]
+3. for SEO purpose we can put 1st row in <thead> , and rest in <tbody>.
+4. for testing only,we can use border ="1" in <table>.
+5. The <tfoot> tag is used to group footer content in an HTML table.
+6. Browsers can use thead,tbody,tfoot to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. you can also use CSS to style these elements.
+7. The <tfoot> element must have one or more <tr> tags inside. 
+8. The <caption> tag defines a table caption. The <caption> tag must be inserted immediately after the <table> tag.
+9. Rowspan = vertically, colspan = horizontally. If we use both then use multiplication. [2*2 = 4]
+
+
+HTML entities
+
+1. Entities are reserved characters in html. 
+2. Entity can be in form of name or number (hex or decimal)
+				 &entity_name;
+					OR
+				 &#entity_number;
+
+3. Browsers may not support all entity names, but the support for numbers is good.
+				 
 
 
